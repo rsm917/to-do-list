@@ -51,13 +51,45 @@ ul li {
   font-size: 17px;
   list-style: none;
   padding: 12px 8px 50px;
-  text-align: left;
+  position: relative;
+  text-align: center;
 }
 
 ul li::before {
+  background-image: url(/images/unchecked.png);
+  background-position: center;
+  background-size: cover;
   border-radius: 50%;
   content: "";
   position: absolute;
   height: 28px;
   width: 28px;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(/images/checked.png);
+}
+
+ul li span {
+  border-radius: 50%;
+  color: #555;
+  font-size: 22px;
+  line-height: 40px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+ul li span:hover {
+  background: #edeef0;
 }

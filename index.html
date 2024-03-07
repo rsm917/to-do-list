@@ -11,15 +11,21 @@
       <div class="to-do-list">
         <h1>To Do:</h1>
         <div class="row">
-          <input type="text" id="task-input-box" placeholder="Add a task.." />
-          <button>Add</button>
+          <input
+            type="text"
+            id="task-input-box"
+            placeholder="Add a task.."
+            autofocus="true"
+          />
+          <button onclick="addTask()">Add</button>
         </div>
         <ul id="list-container">
-          <li>Task 1</li>
-          <li>Task 2</li>
-          <li>Task 3</li>
+          <!--<li class="checked"></li>
+          <li></li>
+          <li></li> -->
         </ul>
       </div>
     </div>
+    <script src="/src/index.js"></script>
   </body>
 </html>
