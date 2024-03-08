@@ -67,6 +67,9 @@ ul li::before {
   top: 12px;
   left: 8px;
 }
+ul li:hover {
+  cursor: pointer;
+}
 
 ul li.checked {
   color: #555;
@@ -92,4 +95,5 @@ ul li span {
 
 ul li span:hover {
   background: #edeef0;
+  cursor: pointer;
 }
